@@ -21,7 +21,7 @@ public class MicService extends Service {
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
             .setContentTitle("Microphone is Active")
             .setContentText("This app is accessing your microphone.")
-            .setSmallIcon(R.mipmap.ic_launcher)
+            .setSmallIcon(android.R.drawable.ic_media_play) // Placeholder icon
             .build();
         startForeground(2345678, notification);
     }
